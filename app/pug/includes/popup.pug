@@ -1,0 +1,154 @@
+#popup.popup
+  #popup__close.popup__close.close
+    i.fas.fa-times
+  .popup__wrapper
+    form.popup__form
+      h2.popup__title
+        | Оставьте заявку и менеджер подберет Вам предложение в течение 15 минут
+      label.popup__label
+        h3.popup__name
+          | Ваше имя
+        input.popup__input(type='text')
+      label.popup__label
+        h3.popup__name
+          | Ваш телефон
+        input.popup__input(type='phone')
+      label.popup__label
+        h3.popup__name
+          | Ваш E-Mail
+        input.popup__input(type='email')
+      input.button.button_bg_accent.button_size_large(type='submit', value='Отправить')
+#popup-selection.popup
+  #popup-selection__close.popup__close.close
+    i.fas.fa-times
+  .popup__wrapper
+    h2.popup__title
+        | Оставьте заявку и менеджер подберет Вам предложение в течение 15 минут
+    form
+      .form
+        .form__group
+          .form__one#form-selection__one_position_where
+            h3.form__name
+              | Куда
+            .form__field
+              | Тунис
+          .form__list#form-selection__list_position_where
+            label.form__label
+              input.form__checkbox(name='where', value='Бразилия', type='checkbox')
+              span.form__position
+                | Бразилия
+            label.form__label
+              input.form__checkbox(name='where', value='Италия', type='checkbox')
+              span.form__position
+                | Италия
+            label.form__label
+              input.form__checkbox(name='where', value='Тунис', type='checkbox', checked)
+              span.form__position
+                | Тунис
+            label.form__label
+              input.form__checkbox(name='where', value='Турция', type='checkbox')
+              span.form__position
+                | Турция
+        .form__group
+          .form__one#form-selection__one_position_from
+            h3.form__name
+              | Откуда
+            .form__field
+              | Москва
+          .form__list#form-selection__list_position_from
+            label.form__label
+              input.form__checkbox(name='from', value='Астрахань', type='checkbox')
+              span.form__position
+                | Астрахань
+            label.form__label
+              input.form__checkbox(name='from', value='Нижний Новгород', type='checkbox')
+              span.form__position
+                | Нижний Новгород
+            label.form__label
+              input.form__checkbox(name='from', value='Новосибирск', type='checkbox', checked)
+              span.form__position
+                | Новосибирск
+            label.form__label
+              input.form__checkbox(name='from', value='Смоленск', type='checkbox')
+              span.form__position
+                | Смоленск
+        .form__group
+          .form__one#form-selection__one_position_date
+            h3.form__name
+              | Дата вылета
+            .form__field
+              input.datepicker#form-selection__datepicker(type='text')
+        .form__group
+          .form__one#form-selection__one_position_nights
+            h3.form__name
+              | Количество ночей
+            .form__field
+              span#form-selection__field_from 7
+              span &nbsp;-&nbsp;
+              span#form-selection__field_to 14
+          .form__calc#form-selection__calc_position_nights
+            .form__row
+              .form__top
+                | От
+              .form__bottom#form-selection__nights_from
+                .form__minus
+                  | &mdash;
+                .form__value
+                  | 7
+                .form__plus
+                  | +
+            .form__row
+              .form__top
+                | До
+              .form__bottom#form-selection__nights_to
+                .form__minus
+                  | &mdash;
+                .form__value
+                  | 14
+                .form__plus
+                  | +
+        .form__group
+          .form__one#form-selection__one_position_people
+            h3.form__name
+              | Количество людей
+            .form__field
+              span#form-selection__field_adults 2
+              span &nbsp;-&nbsp;
+              span#form-selection__field_child 0
+              span &nbsp;-&nbsp;
+              span#form-selection__field_baby 0
+            .form__calc#form-selection__calc_position_people
+              .form__row
+                .form__top
+                  | Взрослые
+                .form__bottom#form-selection__people_adults
+                  .form__minus
+                    | &mdash;
+                  .form__value
+                    | 2
+                  .form__plus
+                    | +
+              .form__row
+                .form__top
+                  | Дети
+                .form__bottom#form-selection__people_baby
+                  .form__minus
+                    | &mdash;
+                  .form__value
+                    | 0
+                  .form__plus
+                    | +  
+      .form__contact
+        label.popup__label
+          h3.popup__name
+            | Ваше имя
+          input.popup__input(type='text')
+        label.popup__label
+          h3.popup__name
+            | Ваш телефон
+          input.popup__input(type='phone')
+        label.popup__label
+          h3.popup__name
+            | Ваш E-Mail
+          input.popup__input(type='email')
+        input.button.button_bg_accent.button_size_large(type='submit', value='Отправить')

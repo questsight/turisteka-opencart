@@ -1,0 +1,38 @@
+form.form(action='#', method='POST')
+  .form__group
+    h3.form__name
+     | Куда
+    select.form__select(type='text')
+      option
+        | Италия
+      option
+        | Франция
+      option
+        | Норвегия
+      option
+        | Тайланд
+      option
+        | ОАЭ
+  .form__group
+    h3.form__name
+     | Куда
+    select.form__select(type='text')
+      option
+        | Москва
+      option
+        | Санкт-Петербург
+      option
+        | Нижний Новгород
+      option
+        | Екатеринбург
+      option
+        | Минск
+  .form__group
+    h3.form__name
+     | Дата вылета
+    input.form__input(type='date')
+  .form__group
+    h3.form__name
+     | Количество людей
+    input.form__input(type='text', placeholder='2 + 2')
+  input.form__submit(type='submit', value='Найти')

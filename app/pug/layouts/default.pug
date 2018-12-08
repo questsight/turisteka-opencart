@@ -1,0 +1,14 @@
+doctype html
+html
+  include ../includes/head.pug
+  body.body
+    .site
+      include ../includes/header.pug
+      .site__content.content
+        block content
+      include ../includes/footer.pug
+      include ../includes/popup.pug
+      script(src='javascript/jquery/dist/jquery.min.js')
+      script(src='javascript/responsive-tabs/js/jquery.responsiveTabs.js')
+      script(src='javascript/ui/jquery-ui-1.9.2.custom.min.js')
+      script(src='javascript/common.js')

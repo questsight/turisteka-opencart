@@ -1,0 +1,16 @@
+section.section.mailing
+  .mailing__overlay
+    .wrapper
+      .mailing__cell
+        .mailing__one
+          h3.mailing__name
+            | Поможем подобрать лучшую цену
+          input#request.mailing__submit(type='submit', value='Оставить заявку')
+      .mailing__cell
+        .mailing__one
+          form.mailing__form(action='#', method='POST')
+            label.mailing__label
+              h3.mailing__name
+                | Следите за самой низкой ценой
+              input.mailing__input(type='email', placeholder='Ваш E-mail')
+            input.mailing__submit(type='submit', value='Подписаться')

@@ -1,0 +1,24 @@
+section.coast
+  .coast__overlay
+    #r-tabs
+      ul
+        li
+          a.r-tabs-anchor-active(href='#r-tabs-tour')
+            | Туры
+        li
+          a(href='#r-tabs-hotel')
+            | Отели
+        li
+          a(href='#r-tabs-air')
+            | Авиабилеты 
+        li
+          a(href='#r-tabs-cruise')
+            | Круизы
+      #r-tabs-tour
+        include ../includes/form-tour.pug
+      #r-tabs-hotel
+        include ../includes/form-hotel.pug
+      #r-tabs-air
+        include ../includes/form-air.pug
+      #r-tabs-cruise
+        include ../includes/form-cruise.pug
