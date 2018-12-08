@@ -1,0 +1,28 @@
+max_screen(breakpoint)
+  @media only screen and (max-width: breakpoint - 1)
+    {block}
+min_screen(breakpoint)
+  @media only screen and (min-width: breakpoint)
+    {block}
+font_size(x)
+  font-size round(fontSize * x)
+darken_bg(bg, x)
+  background-color darken(bg, changeColor * x)
+lighten_bg(bg, x)
+  background-color lighten(bg, changeColor * x)
+darken_color(color, x)
+  color darken(color, changeColor * x)
+lighten_color(color, x)
+  color lighten(color, changeColor * x)
+wrapper(wrapperWidth)
+  margin 0 auto
+  max-wifth wrapperWidth
+  padding 0 15px
+  position relative
+  &:before
+    content ''
+    display table
+  &:after
+    content ''
+    display table
+    clear both

@@ -1,0 +1,31 @@
+          <div class="section__header">
+            <h2 class="section__title lake__title">Специальные предложения</h2>
+          </div>
+          <div class="section__content">
+            <div class="lake">
+              <div class="wrapper">
+              {% for product in products %}
+                 <div class="lake__cell">
+                  <div class="lake__one">
+                    <div class="lake__thumb"><a href="#">
+                    <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}">
+                    </a></div>
+                    <h3 class="lake__name"><a class="lake__link" href="#">{{ product.name }}</a></h3>
+                    <div class="like__price">
+                    {% if not product.special %}
+                    по запросу
+                    {% else %}
+                    от {{ product.price }} на чел.
+                    {% endif %}
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="section__footer">
+            <div class="wrapper">
+              <div class="button__group text-center"><button id="lake-button" class="button button_bg_accent button_size_large">Ещё предложения</button></div>
+            </div>
+          </div>

@@ -1,0 +1,23 @@
+{
+  "name": "turisteka-project",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Nataliya Gubina <questsight@gmail.com>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/assets/libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "font-awesome": "^5.0.10",
+    "bootstrap": "^3.3.7",
+    "responsive-tabs": "^1.6.3"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="{{ direction }}" lang="{{ lang }}">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="yandex-verification" content="44264124f4fcb9b2" />
+<title>{{ title }}</title>
+<base href="{{ base }}" />
+{% if description %}
+<meta name="description" content="{{ description }}" />
+{% endif %}
+{% if keywords %}
+<meta name="keywords" content="{{ keywords }}" />
+{% endif %}
+<link href="catalog/view/javascript/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="catalog/view/javascript/responsive-tabs/css/responsive-tabs.css">
+<link href="catalog/view/theme/sequoia/stylesheet/stylesheet.css" rel="stylesheet">
+{% for link in links %}
+<link href="{{ link.href }}" rel="{{ link.rel }}" />
+{% endfor %}
+</head>
+<body class="body">
+  <div class="site">
+    <header class="site__header header">
+      <div class="header__top">
+        <div class="header__group">
+          <div class="header__logo">
+            <div class="logo"><a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}"></a></div>
+          </div>
+        </div>
+        <div class="header__group">
+          <div class="header__top-phone">
+            <div class="top-phone"><i class="fas fa-mobile-alt"></i>{{ telephone }}</div>
+           </div>
+           <div class="header__callback">
+             <button class="callback button button_bg_accent button_size_small" type="button">Подобрать тур</button>
+           </div>
+         </div>
+       </div>
+     </header>
+     <nav class="top-nav" id="top-nav"><a class="top-nav__link" href="{{ home }}">Главная</a><a class="top-nav__link {% if current_url == '/o-kompanii' %} top-nav__link_status_active {% endif %}" href="https://turisteka.ru/o-kompanii">О компании</a></nav>
+     <div class="site__content content">
